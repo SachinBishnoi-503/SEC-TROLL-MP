@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.font-sans {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.font-sans2 {
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+
+
+/* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
+.font-dela {
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+.font-bals {
+    font-family: "Balsamiq Sans", sans-serif;
+}
