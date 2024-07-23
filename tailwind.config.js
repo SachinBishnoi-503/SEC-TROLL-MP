@@ -4,7 +4,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     extend: {
-      'magic':"url(./images/webp/bg1-img.webp)",
+      backgroundImage: {
+        'Conclusion': "url('./images/webp/background-img.webp')",
+      },
+      'magic': "url(./images/webp/bg1-img.webp)",
       'About': "url('./images/webp/bglayer-2.webp')",
     },
   },
