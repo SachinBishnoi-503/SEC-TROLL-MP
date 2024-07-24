@@ -12,45 +12,68 @@
 
 <body>
     <!-- section-1 -->
-    <section class="bg-[url(./images/webp/bg1-img.webp)] min-h-[932px]  bg-no-repeat bg-cover bg-center">
+    <section class="bg-[url(./images/webp/bg1-img.webp)] min-h-[932px]  bg-no-repeat bg-cover bg-center pb-[428px]">
 
         <div class="container max-w-[1250px]  flex justify-center mx-auto px-3 flex-col">
-            <div
-                class="nav bg-white  flex w-full  rounded-[90px]   p-[23.5px_55px_23.5px_55px] border-[1px] border-[black] mt-[20px]">
-                <div class="flex flex-row items-center justify-between  w-full">
-                    <img src="./src/images/svg/logo-navbar.svg" alt="no-svg">
-
-                    <ul class="flex gap-[24px]">
-                        <li><a href=""
-                                class="font-sans font-normal text-[16px] leading-[24px] text-[#666666] Opacity-[60%] hover:text-[black]">Home</a>
-                        </li>
-                        <li><a href=""
-                                class="font-sans font-normal text-[16px] leading-[24px] text-[#666666] Opacity-[60%] hover:text-[black]">Tokenomics</a>
-                        </li>
-                        <li><a href=""
-                                class="font-sans font-normal text-[16px] leading-[24px] text-[#666666] Opacity-[60%] hover:text-[black]">Roadmap</a>
-                        </li>
-                        <li><a href=""
-                                class="font-sans font-normal text-[16px] leading-[24px] text-[#666666] Opacity-[60%] hover:text-[black]">Ecosystem</a>
-                        </li>
-                        <li><a href=""
-                                class="font-sans font-normal text-[16px] leading-[24px] text-[#666666] Opacity-[60%] hover:text-[black]">Conclusion</a>
-                        </li>
-                    </ul>
-
-
-                    <button
-                        class="font-sans p-[12px_24px_12px_24px] font-bold text-[16px] leading-[19px] shadow-[3px_3px_0px_0px_#0F2440] rounded-[107px] border-[1px] border-[border-[1px] border-[border-[1px] border-[#0F2440]  transition-all hover:scale-[0.8]">
-                        Contact Us
-                    </button>
+            <nav class="sm:h-[90px] h-[70px] flex justify-center items-center mt-[20px] relative z-[4]">
+                <div class="container max-w-[1250px] px-3 mx-auto">
+                    <div
+                        class="max-w-[1250px] rounded-[90px] border border-[#000] flex items-center bg-[#fff] sm:px-[55px] px-[25px] sm:py-[23px] py-[16px]">
+                        <div class="flex justify-between items-center w-full">
+                            <a href="#">
+                                <img src="./src/images/svg/logo-navbar.svg" alt="navlogo" class="w-[59px] h-[43px]">
+                            </a>
+                            <div onclick="toggleMenu()"
+                                class="menuIcon max-lg:w-[40px] max-lg:h-[30px] max-lg:flex max-lg:justify-between z-[15] max-lg:flex-col max-lg:cursor-pointer start-0 transition ease-linear duration-300 hidden">
+                                <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
+                                <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
+                                <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
+                            </div>
+                            <div id="mobileMenu"
+                                class="menuList max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-white max-lg:justify-center max-lg:items-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:-right-[-100%] max-lg:z-[11] transition ease-linear duration-300 flex items-center">
+                                <ul
+                                    class="gap-[24px] flex max-lg:flex-col max-lg:justify-center max-lg:items-center transition ease-linear duration-300">
+                                    <li>
+                                        <a class="font-normal text-base leading-6 text-black font-Balsami hover:text-shadow-[0px_1px_0px_#fff] opacity-60 hover:opacity-[100%] transition ease-in-out duration-300"
+                                            href="#home">Home</a>
+                                    </li>
+                                    <li>
+                                        <a class="font-normal text-base leading-6 text-black font-Balsami hover:text-shadow-[0px_1px_0px_#fff] opacity-60 hover:opacity-[100%] transition ease-in-out duration-300"
+                                            href="#tokenomics">Tokenomics</a>
+                                    </li>
+                                    <li>
+                                        <a class="font-normal text-base leading-6 text-black font-Balsami hover:text-shadow-[0px_1px_0px_#fff] opacity-60 hover:opacity-[100%] transition ease-in-out duration-300"
+                                            href="#roadmap">Roadmap</a>
+                                    </li>
+                                    <li>
+                                        <a class="font-normal text-base leading-6 text-black font-Balsami hover:text-shadow-[0px_1px_0px_#fff] opacity-60 hover:opacity-[100%] transition ease-in-out duration-300"
+                                            href="#ecosystem">Ecosystem</a>
+                                    </li>
+                                    <li>
+                                        <a class="font-normal text-base leading-6 text-black] font-Balsami hover:text-shadow-[0px_1px_0px_#fff] opacity-60 hover:opacity-[100%] transition ease-in-out duration-300"
+                                            href="#conclusion">Conclusion</a>
+                                    </li>
+                                    <li class="lg:hidden block"><button class=" font-sans w-[133px] h-[43px] text-[black] font-bold text-[16px] leading-[19px] shadow-[3px_3px_0px_0px_#0F2440] bg-[white] rounded-[107px] border-[1px] border-[border-[1px] border-[border-[1px] border-[#0F2440]  transition-all hover:scale-[0.8]
+                                                                                                        ">Contact us
+                                        </button></li>
+                                </ul>
+                            </div>
+                            <div class="lg:block hidden">
+                                <button class=" font-sans w-[133px] h-[43px] text-[black] font-bold text-[16px] leading-[19px] shadow-[3px_3px_0px_0px_#0F2440] bg-[white] rounded-[107px] border-[1px] border-[border-[1px] border-[border-[1px] border-[#0F2440]  transition-all hover:scale-[0.8] 
+                                                                    ">Contact us </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </nav>
 
-            </div>
             <div class="row  flex flex-wrap flex-row mx-auto w-full px-3 mt-[128px]">
                 <div class=" lg:w-1/2 w-full px-3 justify-center flex flex-col">
-                    <h1 class="font-sans2 Gothic One font-normal text-[50px] leading-[60px] text-[white]">Unlock the
+                    <h1
+                        class="font-sans2 Gothic One font-normal sm:text-[50px] text-[38px] leading-[60px] text-[white]">
+                        Unlock the
                         Magic of <br><span
-                            class="font-sans2 font-normal text-[64px] leading-[76.8px] text-[white]"></span>TROLLMP</span>
+                            class="font-sans2 font-normal sm:text-[50px] text-[38px] leading-[76.8px] text-[white]"></span>TROLLMP</span>
                     </h1>
                     <p class="font-sans leading-[24px] text-[16px] font-normal text-[white] mt-[16px]">We're
                         introducing TROLLMP, the most fantastic token ever created! Just like nobody builds walls better
@@ -80,7 +103,7 @@
                     </div>
 
                 </div>
-                <div class="lg:w-1/2 w-full px-3 justify-center flex flex-col">
+                <div class="lg:w-1/2 w-full px-3 justify-center flex flex-col sm:pt-0 pt-5">
                     <img src="./src/images/webp/Group-card.webp" alt="no-images" class="w-full">
 
                 </div>
@@ -91,7 +114,7 @@
     <section class="mt-[-20px] bg-[white] ">
         <div class="container  max-w-[1250px]  flex justify-center mx-auto px-3 flex-col">
             <div class="row  flex flex-wrap flex-row mx-auto w-full px-3  pt-[120px] pb-[50px] ">
-                <div class="lg:w-[50%] w-full px-3 justify-center flex flex-col">
+                <div class="lg:w-[41.66%] w-full relative px-3 flex justify-center mt-8 lg:mt-0">
                     <img src="./src/images/webp/one-men.webp" alt="trupm" class="max-w-[450px] w-full">
 
                 </div>
@@ -102,7 +125,7 @@
                     <div class="h-[192px] mt-3 overflow-y-scroll">
                         <div class="flex items-start gap-[6px] mt-[16px]">
                             <img src="./img/svg/tick.svg" alt="">
-                            <p class="font-sans font-normal text-[16px] leading-[24px] text-[#4D4D4D]">Ladies and
+                            <p class="font-sans font-normal text-base leading-6 text-[#4D4D4D]">Ladies and
                                 gentlemen, meme enthusiasts, and fellow citizens of the internet, welcome to the TROLLMP
                                 revolution! It's an
                                 honor to address you today, and let me tell you, there's never been a more exciting time
@@ -165,6 +188,7 @@
             </div>
         </div>
     </section>
+
     <!-- section-3 -->
     <section class="bg-[url(./images/webp/bglayer-2.webp);] min-h-[910px] bg-no-repeat bg-cover bg-center">
         <div class="contaner max-w-[1250px]  flex justify-center mx-auto px-3 flex-col">
@@ -200,10 +224,52 @@
                             <p class="text-[16px] leading-[24px] font-sans font-normal text-white">TRMP Token
                                 Type:</p>
                             <p class="text-[18px] leading-[27px] font-sans font-bold text-white">ERC-20</p>
+    <section class="relative  ">
+        <div class=" mb-[-3px]">
+            <img class="w-full " src="./src/images/webp/1st-layer.png" alt="">
+        </div>
+        <div class=" bg-[#DF4741] pt-5 pb-5 ">
+            <div class="contaner max-w-[1250px]  justify-center mx-auto px-3 flex-col">
+                <div class="row flex flex-wrap flex-row mx-auto w-full px-3 mt-[160px]">
+                    <div class=" lg:w-1/2 px-3 w-full">
+                        <img src="./src/images/webp/group2-img.webp" alt="no-images" class="w-full">
+                    </div>
+                    <div class="lg:w-[41.66%] mx-auto px-3 flex items-center justify-center mt-8 lg:mt-0">
+                        <div class="box-token  max-w-[501px] rounded-[20px] p-[20px] bg-orange z-10 border border-[#FFFFFF80] transition ease-in-out  duration-300 ;
+                            ">
+                            <h2
+                                class="text-white lg:text-[40px] text-[25px] leading-[48px] font-normal font-Dela pb-[16px]">
+                                Tokenomics</h2>
+                            <div class="flex gap-[43px] mb-[4px]">
+                                <p class="text-[16px] leading-[24px] font-sans font-normal text-white">Token Name:
+                                </p>
+                                <p class="text-[18px] leading-[27px] font-sans font-bold text-white">TROLLMP</p>
+                            </div>
+                            <div class="flex gap-[35px] mb-[4px]">
+                                <p class="text-[16px] leading-[24px] font-sans font-normal text-white">Token Symbol:
+                                </p>
+                                <p class="text-[18px] leading-[27px] font-sans font-bold text-white">TRMP</p>
+                            </div>
+                            <div class="flex gap-[43px] mb-[4px]">
+                                <p class="text-[16px] leading-[24px] font-sans font-normal text-white">Total Supply:
+                                </p>
+                                <p class="text-[16px] leading-[24px] font-sans font-normal text-white max-w-[323px]">
+                                    Infinite jest supply, but let's keep it real <span
+                                        class="font-bold text-[18px] leading-[27px]">–142.53
+                                        Billion</span></p>
+                            </div>
+                            <div class="flex gap-[4px] mb-[4px]">
+                                <p class="text-[16px] leading-[24px] font-sans font-normal text-white">TRMP Token
+                                    Type:</p>
+                                <p class="text-[18px] leading-[27px] font-sans font-bold text-white">ERC-20</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class=" mt-[-25px]">
+            <img class="w-full " src="./src/images/webp/2nd-layer.png" alt="">
         </div>
     </section>
     <!-- section-4 -->
@@ -366,7 +432,7 @@
                                 <div class=' flex items-start gap-[10px] pt-[3px]'>
                                     <img src="./src/images/svg/check-circle.svg" alt="chek-icon" />
                                     <p
-                                        class=' text-white font-Balsamiq font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6'>
+                                        class=' text-white font-Balsami font-normal text-[14px] lg:text-xl leading-[20px] lg:leading-6'>
                                         Create TROLLMP on Ethereum.</p>
                                 </div>
                                 <div class=' flex items-start gap-[10px]'>
@@ -721,6 +787,14 @@
         </div>
         <h6 class="font-sans font-medium text-white justify-center flex py-5">copyright@2024 all right reserved</h6>
     </section>
+    <div class="">
+        <button id="backToTop"
+            class="fixed bottom-6 flex justify-center items-center text-[18px] font-medium right-6 bg-[#ffffff] text-white w-[55px] h-[55px] rounded-full shadow-lg  border-[2px] border-black   transition-transform transform scale-90 hover:scale-100 duration-[0.4s] focus:outline-none z-10">
+            <img src="./src/images/webp/back-top.png" alt="no-images" class="z-[100]">
+        </button>
+    </div>
+    <script src="./src/js/app.js">
+    </script>
 </body>
 
 </html>
