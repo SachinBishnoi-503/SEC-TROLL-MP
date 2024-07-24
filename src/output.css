@@ -707,8 +707,8 @@ video {
   margin-top: -0.25rem;
 }
 
-.mb-\[-10px\]{
-  margin-bottom: -10px;
+.mb-\[-3px\]{
+  margin-bottom: -3px;
 }
 
 .mb-\[4px\]{
@@ -735,12 +735,12 @@ video {
   margin-top: -170px;
 }
 
-.mt-\[-17px\]{
-  margin-top: -17px;
-}
-
 .mt-\[-20px\]{
   margin-top: -20px;
+}
+
+.mt-\[-25px\]{
+  margin-top: -25px;
 }
 
 .mt-\[10px\]{
@@ -777,26 +777,6 @@ video {
 
 .mt-\[96px\]{
   margin-top: 96px;
-}
-
-.mt-\[-15px\]{
-  margin-top: -15px;
-}
-
-.mt-\[-25px\]{
-  margin-top: -25px;
-}
-
-.mb-\[-0px\]{
-  margin-bottom: -0px;
-}
-
-.mb-\[-3px\]{
-  margin-bottom: -3px;
-}
-
-.mt-\[-10px\]{
-  margin-top: -10px;
 }
 
 .block{
@@ -1206,10 +1186,6 @@ video {
   padding: 20px;
 }
 
-.p-1{
-  padding: 0.25rem;
-}
-
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -1245,11 +1221,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-\[100px\]{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .py-\[12px\]{
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1260,9 +1231,8 @@ video {
   padding-bottom: 16px;
 }
 
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.pb-5{
+  padding-bottom: 1.25rem;
 }
 
 .pb-\[16px\]{
@@ -1281,8 +1251,8 @@ video {
   padding-bottom: 310px;
 }
 
-.pb-\[458px\]{
-  padding-bottom: 458px;
+.pb-\[428px\]{
+  padding-bottom: 428px;
 }
 
 .pb-\[50px\]{
@@ -1317,6 +1287,10 @@ video {
   padding-top: 1rem;
 }
 
+.pt-5{
+  padding-top: 1.25rem;
+}
+
 .pt-\[120px\]{
   padding-top: 120px;
 }
@@ -1347,62 +1321,6 @@ video {
 
 .pt-px{
   padding-top: 1px;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
-}
-
-.pt-\[\]{
-  padding-top: ;
-}
-
-.pt-\[-10px\]{
-  padding-top: -10px;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pb-\[\]{
-  padding-bottom: ;
-}
-
-.pb-\[300px\]{
-  padding-bottom: 300px;
-}
-
-.pb-\[400px\]{
-  padding-bottom: 400px;
-}
-
-.pb-\[40px\]{
-  padding-bottom: 40px;
-}
-
-.pb-\[430px\]{
-  padding-bottom: 430px;
-}
-
-.pb-\[408px\]{
-  padding-bottom: 408px;
-}
-
-.pb-\[428px\]{
-  padding-bottom: 428px;
-}
-
-.pb-\[418px\]{
-  padding-bottom: 418px;
-}
-
-.pt-7{
-  padding-top: 1.75rem;
 }
 
 .text-center{
@@ -1445,29 +1363,17 @@ video {
   font-size: 32px;
 }
 
+.text-\[38px\]{
+  font-size: 38px;
+}
+
 .text-\[40px\]{
   font-size: 40px;
-}
-
-.text-\[50px\]{
-  font-size: 50px;
-}
-
-.text-\[64px\]{
-  font-size: 64px;
 }
 
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.text-\[21px\]{
-  font-size: 21px;
-}
-
-.text-\[38px\]{
-  font-size: 38px;
 }
 
 .font-\[400\]{
@@ -1542,14 +1448,6 @@ video {
   line-height: 76.8px;
 }
 
-.leading-3{
-  line-height: .75rem;
-}
-
-.leading-\[0px\]{
-  line-height: 0px;
-}
-
 .text-\[\#000000\]{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1583,14 +1481,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[21\]{
-  color: 21;
-}
-
-.text-\[\]{
-  color: ;
 }
 
 .opacity-20{
@@ -1967,10 +1857,6 @@ video {
     flex-direction: row;
   }
 
-  .sm\:items-center{
-    align-items: center;
-  }
-
   .sm\:gap-\[30px\]{
     gap: 30px;
   }
@@ -1998,20 +1884,16 @@ video {
     padding-right: 30px;
   }
 
+  .sm\:pt-0{
+    padding-top: 0px;
+  }
+
   .sm\:pt-7{
     padding-top: 1.75rem;
   }
 
   .sm\:pt-\[70px\]{
     padding-top: 70px;
-  }
-
-  .sm\:pb-\[458px\]{
-    padding-bottom: 458px;
-  }
-
-  .sm\:pt-0{
-    padding-top: 0px;
   }
 
   .sm\:text-\[16px\]{
@@ -2026,20 +1908,12 @@ video {
     font-size: 35px;
   }
 
-  .sm\:text-\[64px\]{
-    font-size: 64px;
-  }
-
   .sm\:text-\[50px\]{
     font-size: 50px;
   }
 
   .sm\:leading-\[44px\]{
     line-height: 44px;
-  }
-
-  .sm\:leading-\[76\.8px\]{
-    line-height: 76.8px;
   }
 
   .sm\:before\:left-\[12px\]::before{
@@ -2138,20 +2012,12 @@ video {
     font-size: 40px;
   }
 
-  .md\:text-\[64px\]{
-    font-size: 64px;
-  }
-
   .md\:leading-\[24px\]{
     line-height: 24px;
   }
 
   .md\:leading-\[48px\]{
     line-height: 48px;
-  }
-
-  .md\:leading-\[76\.8px\]{
-    line-height: 76.8px;
   }
 
   .md\:before\:mx-auto::before{
