@@ -23,13 +23,13 @@
                             <a href="#">
                                 <img src="./src/images/svg/logo-navbar.svg" alt="navlogo" class="w-[59px] h-[43px]">
                             </a>
-                            <div onclick="openNav()"
+                            <div onclick="toggleMenu()"
                                 class="menuIcon max-lg:w-[40px] max-lg:h-[30px] max-lg:flex max-lg:justify-between z-[15] max-lg:flex-col max-lg:cursor-pointer start-0 transition ease-linear duration-300 hidden">
                                 <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
                                 <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
                                 <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
                             </div>
-                            <div onclick="openNav()"
+                            <div id="mobileMenu"
                                 class="menuList max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-white max-lg:justify-center max-lg:items-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:-right-[-100%] max-lg:z-[11] transition ease-linear duration-300 flex items-center">
                                 <ul
                                     class="gap-[24px] flex max-lg:flex-col max-lg:justify-center max-lg:items-center transition ease-linear duration-300">
@@ -66,6 +66,7 @@
                     </div>
                 </div>
             </nav>
+
             <div class="row  flex flex-wrap flex-row mx-auto w-full px-3 mt-[128px]">
                 <div class=" lg:w-1/2 w-full px-3 justify-center flex flex-col">
                     <h1
@@ -752,6 +753,14 @@
         </div>
         <h6 class="font-sans font-medium text-white justify-center flex py-5">copyright@2024 all right reserved</h6>
     </section>
+    <div class="">
+        <button id="backToTop"
+            class="fixed bottom-6 flex justify-center items-center text-[18px] font-medium right-6 bg-[#ffffff] text-white w-[55px] h-[55px] rounded-full shadow-lg  border-[2px] border-black   transition-transform transform scale-90 hover:scale-100 duration-[0.4s] focus:outline-none z-10">
+            <img src="./src/images/webp/back-top.png" alt="no-images" class="z-[100]">
+        </button>
+    </div>
+    <script src="./src/js/app.js">
+    </script>
 </body>
 
 </html>
