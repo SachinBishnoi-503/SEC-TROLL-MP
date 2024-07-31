@@ -22,3 +22,23 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    // Get all anchor links with hashes
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default anchor behavior
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: "smooth" // Smooth scrolling
+                });
+            }
+        });
+    });
+  });
