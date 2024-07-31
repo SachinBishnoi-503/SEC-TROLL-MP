@@ -25,3 +25,11 @@
 .font-bals {
     font-family: "Balsamiq Sans", sans-serif;
 }
+::-webkit-scrollbar{
+    background-color: #FFAEAB;
+        width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+}
