@@ -600,8 +600,8 @@ video {
   position: relative;
 }
 
-.\!right-2{
-  right: 0.5rem !important;
+.\!right-\[70px\]{
+  right: 70px !important;
 }
 
 .bottom-\[-5\%\]{
@@ -622,6 +622,10 @@ video {
 
 .left-\[4px\]{
   left: 4px;
+}
+
+.left-\[70px\]{
+  left: 70px;
 }
 
 .right-0{
@@ -650,38 +654,6 @@ video {
 
 .top-\[8\%\]{
   top: 8%;
-}
-
-.\!right-\[\]{
-  right:  !important;
-}
-
-.\!right-\[70\]{
-  right: 70 !important;
-}
-
-.\!right-\[70px\]{
-  right: 70px !important;
-}
-
-.left-\[\]{
-  left: ;
-}
-
-.left-\[70\]{
-  left: 70;
-}
-
-.left-\[70\[x\]\]{
-  left: 70[x];
-}
-
-.left-\[70\[\]\]{
-  left: 70[];
-}
-
-.left-\[70px\]{
-  left: 70px;
 }
 
 .-z-10{
@@ -1798,8 +1770,8 @@ video {
     left: 15px;
   }
 
-  .max-md\:top-\[85px\]{
-    top: 85px;
+  .max-md\:top-\[75px\]{
+    top: 75px;
   }
 
   .max-md\:mx-auto{
@@ -1834,8 +1806,8 @@ video {
     left: 20px;
   }
 
-  .max-sm\:left-\[35px\]{
-    left: 35px;
+  .max-sm\:left-\[25px\]{
+    left: 25px;
   }
 
   .max-sm\:max-w-\[260px\]{
